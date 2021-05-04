@@ -189,13 +189,19 @@
           :checked="(authclient.scope || []).includes('profile')"
           @change="setScope($event, 'profile')"
         >
-          {{ $t('profile') }}
+          {{ $t('scope.profile') }}
         </b-form-checkbox>
         <b-form-checkbox
           :checked="(authclient.scope || []).includes('api')"
           @change="setScope($event, 'api')"
         >
-          {{ $t('api') }}
+          {{ $t('scope.api') }}
+        </b-form-checkbox>
+        <b-form-checkbox
+          :checked="(authclient.scope || []).includes('discovery')"
+          @change="setScope($event, 'discovery')"
+        >
+          {{ $t('scope.discovery') }}
         </b-form-checkbox>
       </b-form-group>
 

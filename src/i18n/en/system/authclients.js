@@ -60,8 +60,11 @@ export default {
       redirectURI: 'Redirect URI\'s',
       secret: 'Secret',
 
-      profile: 'Allow client access to user\'s profile',
-      api: 'Allow client access to Corteza API on behalf of user',
+      scope: {
+        profile: 'Allow client access to user\'s profile',
+        api: 'Allow client access to Corteza API on behalf of user',
+        discovery: 'Allow client access to Corteza Discovery API on behalf of user',
+      },
 
       trusted: {
         label: 'Trusted',
